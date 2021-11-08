@@ -10,7 +10,6 @@ const postRoutes = require("./routes/routes.js");
 
 dotenv.config();
 
-// const {postRoutes} = require("./routes/routes.js");
 //db connection
 mongoose.connect(process.env.MONGO_URI,{useNewUrlParser: true})
     .then(() => console.log('DB Connected'))   
